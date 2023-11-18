@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+        <nav>
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="registration.html">Registration</a>|
+            <a href="contact.html">Contact</a>|
+            <a href="table.html">Table</a>
+    </header>
+
+    <main>
+        <img src="9gag.png" alt="Placeholder Image" width="300">
+        <p>We are a fictitious company created for demonstration purposes. This is a simple responsive design example.</p>
+
+
+        <section id="interactive-section">
+            <h2>Learn More About Us</h2>
+            <div class="tabs">
+                <button class="tab-button active" onclick="showTabContent('about')">About Us</button>
+                <button class="tab-button" onclick="showTabContent('mission')">Our Mission</button>
+                <button class="tab-button" onclick="showTabContent('vision')">Our Vision</button>
+            </div>
+            <div class="tab-content" id="about">We are a dedicated team providing the best services in the industry.</div>
+            <div class="tab-content" id="mission" style="display: none;">Our mission is to deliver outstanding solutions for our clients.</div>
+            <div class="tab-content" id="vision" style="display: none;">We envision a world where our solutions empower businesses to reach new heights.</div>
+        </section>
+
+        <section id="testimonials">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial" id="testimonial1">
+                <img src="avatar.jpg" alt="Alex's Avatar" style="width:50px; height:50px; border-radius:50%;">
+                <p>"This website has been a game changer for my business!"</p>
+                <p>- Alex</p>
+            </div>
+            <div class="testimonial" id="testimonial2" style="display: none;">
+                <img src="avatar.jpg" alt="Taylor's Avatar" style="width:50px; height:50px; border-radius:50%;">
+                <p>"Highly recommend their services. Top-notch support!"</p>
+                <p>- Taylor</p>
+            </div>
+            <button onclick="nextTestimonial()">Next</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <img src="9gag.png" alt="Footer Logo" style="width: 50px; height:auto;">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
